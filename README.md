@@ -71,7 +71,7 @@ COPY --chown=nginx --from=composer /app /var/www/html
 
 ## Build
 ´´´
-    docker build -f Dockerfile -t talentpitchv2-php74 . --platform linux/arm64/v8
+    docker build -f Dockerfile -t talentpitchv2-php74 . --platform linux/amd64
     docker tag talentpitchv2-php74 paulpwo/talentpitchv2-php74:amd64
     docker push  paulpwo/talentpitchv2-php74:amd64
 ´´´
