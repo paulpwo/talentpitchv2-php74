@@ -12,6 +12,8 @@ RUN apk add --no-cache php7-redis \
     php7-simplexml php7-tokenizer \
     php7-xmlwriter php7-sodium php7-pdo \ 
     php7-pdo_mysql php7-pdo_dblib nano git zip unzip
+# install opcache
+RUN apk add --no-cache php7-opcache
 
 # Configure nginx
 COPY config/nginx.conf /etc/nginx/nginx.conf
