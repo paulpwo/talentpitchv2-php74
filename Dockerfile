@@ -11,7 +11,7 @@ RUN apk add --no-cache php7-redis \
     php7-zip php7-gd php7-fileinfo \ 
     php7-simplexml php7-tokenizer \
     php7-xmlwriter php7-sodium php7-pdo \ 
-    php7-pdo_mysql php7-pdo_dblib nano git zip unzip
+    php7-pdo_mysql php7-pdo_dblib nano git zip unzip php7-pecl-imagick aws-cli
 # install opcache
 RUN apk add --no-cache php7-opcache
 
